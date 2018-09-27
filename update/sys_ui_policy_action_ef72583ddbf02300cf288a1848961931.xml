@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_misc</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-27 13:14:24</sys_created_on>
+        <sys_id>ef72583ddbf02300cf288a1848961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_misc</sys_name>
+        <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
+        <sys_update_name>sys_ui_policy_action_ef72583ddbf02300cf288a1848961931</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-27 13:14:24</sys_updated_on>
+        <table>x_277530_excuseme_excuseme</table>
+        <ui_policy display_value="Show or hide the misc field">fbe0d4f9dbf02300cf288a1848961987</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

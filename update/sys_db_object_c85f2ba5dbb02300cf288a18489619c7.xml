@@ -32,7 +32,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-09-27 10:39:44</sys_updated_on>
         <update_access>false</update_access>
-        <user_role display_value="x_277530_excuseme.user" name="x_277530_excuseme.user">545faba5dbb02300cf288a18489619a2</user_role>
+        <user_role display_value="x_277530_excuseme.Azubi" name="x_277530_excuseme.Azubi">545faba5dbb02300cf288a18489619a2</user_role>
         <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>
