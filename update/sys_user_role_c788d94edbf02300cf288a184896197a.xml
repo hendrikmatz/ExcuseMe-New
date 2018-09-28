@@ -2,25 +2,25 @@
     <sys_user_role action="INSERT_OR_UPDATE">
         <assignable_by/>
         <can_delegate>true</can_delegate>
-        <description>Ausbilder. Hat erweiterten Zugriff auf die ExcuseMe App.</description>
+        <description>Contains more priviledges than the standard user group</description>
         <elevated_privilege>false</elevated_privilege>
         <grantable>true</grantable>
         <includes_roles/>
-        <name>x_277530_excuseme.Ausbilder</name>
+        <name>x_277530_excuseme.Advanced</name>
         <requires_subscription>-1</requires_subscription>
         <scoped_admin>false</scoped_admin>
-        <suffix>Ausbilder</suffix>
+        <suffix>Advanced</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-09-27 11:13:56</sys_created_on>
-        <sys_id>2ae6b3e9dbb02300cf288a18489619cf</sys_id>
+        <sys_created_on>2018-09-28 12:58:26</sys_created_on>
+        <sys_id>c788d94edbf02300cf288a184896197a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_277530_excuseme.Ausbilder</sys_name>
+        <sys_name>x_277530_excuseme.Advanced</sys_name>
         <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
         <sys_policy/>
         <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
-        <sys_update_name>sys_user_role_2ae6b3e9dbb02300cf288a18489619cf</sys_update_name>
+        <sys_update_name>sys_user_role_c788d94edbf02300cf288a184896197a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-09-27 11:13:56</sys_updated_on>
+        <sys_updated_on>2018-09-28 12:58:26</sys_updated_on>
     </sys_user_role>
 </record_update>

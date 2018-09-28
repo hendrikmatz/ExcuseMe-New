@@ -3,5 +3,8 @@
         <element choice="1" label="Ausbilder" max_length="75" name="x_277530_excuseme_ausbilder" reference="sys_user" type="reference">
             <choice/>
         </element>
+        <index name="index">
+            <element name="x_277530_excuseme_ausbilder"/>
+        </index>
     </element>
 </database>
