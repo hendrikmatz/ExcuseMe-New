@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="ExcuseMe" max_length="40" name="x_277530_excuseme_excuseme" type="collection">
+    <element extends="task" label="ExcuseMe" max_length="40" name="x_277530_excuseme_excuseme" sizeclass="4" type="collection">
         <element label="Azubiname" mandatory="true" max_length="32" name="u_azubiname" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Azubiname" max_length="40" name="u_azubi_name" reference="sys_user" type="string"/>
-        <element label="Azubiname2" mandatory="true" max_length="32" name="u_azubi_name2" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="E-Mail" mandatory="true" max_length="40" name="u_email" type="string"/>
         <element label="Enddatum" mandatory="true" max_length="40" name="u_end_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Sonstiges" max_length="40" name="u_misc" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="0" label="Grund" mandatory="true" max_length="40" name="u_reason" type="string">
