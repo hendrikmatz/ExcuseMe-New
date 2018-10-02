@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_schedule">
+    <cmn_schedule action="INSERT_OR_UPDATE">
+        <description>Contains the school holidays for NRW, Germany. Also contains national german holidays.</description>
+        <document/>
+        <document_key/>
+        <name>Ferien und Feiertage Deutschland</name>
+        <parent/>
+        <read_only>false</read_only>
+        <sys_class_name>cmn_schedule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-02 10:30:27</sys_created_on>
+        <sys_id>db51991bdb7c2300cf288a18489619aa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Ferien und Feiertage Deutschland</sys_name>
+        <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
+        <sys_update_name>cmn_schedule_db51991bdb7c2300cf288a18489619aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-02 10:34:16</sys_updated_on>
+        <time_zone>Europe/Berlin</time_zone>
+        <type/>
+    </cmn_schedule>
+</record_update>
