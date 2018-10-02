@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>UpdateExcuseMeAssignments</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-10-01 10:48:36</run_start>
+        <run_time>1969-12-31 23:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[// This script assigns all tasks from the ExcuseMe table to the person listed as their handler
+
+// Set the ticket handler for each ticket to the Azubi's handler
+var excuseMeTickets = new GlideRecord("x_277530_excuseme_excuseme");
+
+//excuseMeTickets.addNullQuery("assigned_to");
+
+// Make sure only open tickets are changed so no data is lost
+excuseMeTickets.addQuery("state", "=", "0");
+excuseMeTickets.query();
+
+// Iterate over results
+while (excuseMeTickets.next()) {
+	ausbilderId = excuseMeTickets.u_azubiname.x_277530_excuseme_ausbilder;
+	// Set value to the assigned_to field
+	excuseMeTickets.assigned_to = ausbilderId;
+	excuseMeTickets.update();
+}
+
+gs.info("All ExcuseMe assignments have been updated to the current handler");]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-01 10:59:31</sys_created_on>
+        <sys_id>d1b71487dbb02300cf288a1848961940</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>UpdateExcuseMeAssignments</sys_name>
+        <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
+        <sys_update_name>sysauto_script_d1b71487dbb02300cf288a1848961940</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-01 13:10:45</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -5,7 +5,7 @@
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>ExcuseMe Set Approver</name>
+        <name>ExcuseMe Date Verification</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -28,41 +28,41 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	if (a) {
-		return;
-	} 
-	// Access sys_user table and find the Ausbilder by sys_id
-	var ausbilderId = current.u_azubiname.x_277530_excuseme_ausbilder;	
-	var ausbilder = new GlideRecord("sys_user");
-	if (ausbilder.get(ausbilderId)) {
-		gs.addInfoMessage("The name you were looking for is:" + ausbilder.name);
-		current.assigned_to.setDisplayValue(ausbilder.name);
-	} else {
-		// If the Ausbilder was not found, do nothing and tell the log
-		gs.addErrorMessage("The Ausbilder field is either empty or the user doesnt exist. If the latter is the case, notify somebody.");
-		//current.setAbortAction(true);
-	}
 
-	//gs.info("Businessrule Set Approver is running. Returns: "+ ausbilder.name);
+	// Get the setting for how far in the past a request is allowed to be
+	var maxDaysBack = gs.getProperty("x_277530_excuseme.maxDaysBack");
+	
+	// Get the current starting date for the request
+	var currDateSet = new GlideDate();
+	currDateSet.setValue(current.u_starting_date.toString());
+	// Get the earliest possible date for the request
+	var earliestDatePossible = new GlideDate();
+	earliestDatePossible.setValue(gs.daysAgoStart(maxDaysBack));
+	
+	if (currDateSet.compareTo(earliestDatePossible) == -1) {
+		// If the current date is before the earliest possible date, refuse access
+		gs.addErrorMessage("Das gewählt Datum liegt mehr als " + maxDaysBack + " in der Vergangenheit. Du bist zu spät!");
+		current.setAbortAction(true);
+	}	
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-10-01 08:12:46</sys_created_on>
+        <sys_created_on>2018-10-02 07:00:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>5f42b772db702300cf288a184896192b</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>ExcuseMe Set Approver</sys_name>
+        <sys_id>c4eaec13db3c2300cf288a18489619ee</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>ExcuseMe Date Verification</sys_name>
         <sys_overrides/>
         <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
         <sys_policy/>
         <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
-        <sys_update_name>sys_script_5f42b772db702300cf288a184896192b</sys_update_name>
+        <sys_update_name>sys_script_c4eaec13db3c2300cf288a18489619ee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-10-01 12:16:59</sys_updated_on>
-        <template>assigned_toSAMEASu_azubiname.x_277530_excuseme_ausbilder^EQ</template>
+        <sys_updated_on>2018-10-02 08:07:48</sys_updated_on>
+        <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=5f42b772db702300cf288a184896192b"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c4eaec13db3c2300cf288a18489619ee"/>
 </record_update>

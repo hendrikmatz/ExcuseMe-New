@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="ExcuseMe" max_length="40" name="x_277530_excuseme_excuseme" sizeclass="4" type="collection">
+    <element audit="true" extends="task" label="ExcuseMe" max_length="40" name="x_277530_excuseme_excuseme" sizeclass="11" type="collection">
         <element label="Azubiname" mandatory="true" max_length="32" name="u_azubiname" reference="sys_user" type="reference"/>
-        <element label="Enddatum" mandatory="true" max_length="40" name="u_end_date" type="glide_date_time"/>
+        <element label="Enddatum" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Sonstiges" max_length="40" name="u_misc" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="0" label="Grund" mandatory="true" max_length="40" name="u_reason" type="string">
             <choice>
@@ -10,7 +10,7 @@
                 <element inactive_on_update="false" label="Sonstiges" sequence="2" value="2"/>
             </choice>
         </element>
-        <element label="Startdatum" mandatory="true" max_length="40" name="u_starting_date" type="glide_date_time"/>
+        <element label="Startdatum" mandatory="true" max_length="40" name="u_starting_date" type="glide_date"/>
         <element label="Teamleiter" max_length="32" name="u_team_leader" read_only="true" reference="sys_user" type="reference"/>
     </element>
 </database>

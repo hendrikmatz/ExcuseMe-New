@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>ExcuseMe Reminder for Approval</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-10-02 12:50:49</run_start>
+        <run_time>1970-01-01 06:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var anfragen = new GlideRecord("x_277530_excuseme_excuseme");
+
+anfragen.addQuery("state", "=", 0);
+anfragen.addQuery("created", "<", gs.hoursAgo(48));
+anfragen.query();
+
+while (anfragen.next()) {
+	// Run an aggregator over all open records, group them and send a mail to every approver that has at least 1 open record
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-02 12:57:14</sys_created_on>
+        <sys_id>dd4db11bdbfc2300cf288a18489619ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ExcuseMe Reminder for Approval</sys_name>
+        <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
+        <sys_update_name>sysauto_script_dd4db11bdbfc2300cf288a18489619ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-02 12:58:44</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
