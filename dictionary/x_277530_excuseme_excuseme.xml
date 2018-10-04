@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="ExcuseMe" max_length="40" name="x_277530_excuseme_excuseme" sizeclass="11" type="collection">
-        <element label="Azubiname" mandatory="true" max_length="32" name="u_azubiname" reference="sys_user" type="reference"/>
+    <element audit="true" extends="task" label="ExcuseMe" max_length="40" name="x_277530_excuseme_excuseme" type="collection">
+        <element default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Azubiname" mandatory="true" max_length="32" name="u_azubiname" reference="sys_user" reference_qual="roles=x_277530_excuseme.User^EQ" reference_qual_condition="roles=x_277530_excuseme.User^EQ" type="reference" use_dynamic_default="true"/>
         <element label="Enddatum" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Sonstiges" max_length="40" name="u_misc" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="0" label="Grund" mandatory="true" max_length="40" name="u_reason" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Grund" mandatory="true" max_length="40" name="u_reason" type="string">
             <choice>
                 <element inactive_on_update="false" label="Krankheit" sequence="0" value="0"/>
                 <element inactive_on_update="false" label="Arbeit" sequence="1" value="1"/>
