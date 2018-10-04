@@ -28,14 +28,14 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	if (a) {
-		return;
-	} 
+	//if (a) {
+	//	return;
+	//} 
 	// Access sys_user table and find the Ausbilder by sys_id
 	var ausbilderId = current.u_azubiname.x_277530_excuseme_ausbilder;	
 	var ausbilder = new GlideRecord("sys_user");
 	if (ausbilder.get(ausbilderId)) {
-		gs.addInfoMessage("The name you were looking for is:" + ausbilder.name);
+		//gs.addInfoMessage("The name you were looking for is:" + ausbilder.name);
 		current.assigned_to.setDisplayValue(ausbilder.name);
 	} else {
 		// If the Ausbilder was not found, do nothing and tell the log
@@ -52,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5f42b772db702300cf288a184896192b</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>ExcuseMe Set Approver</sys_name>
         <sys_overrides/>
         <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
@@ -60,7 +60,7 @@
         <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
         <sys_update_name>sys_script_5f42b772db702300cf288a184896192b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-10-01 12:16:59</sys_updated_on>
+        <sys_updated_on>2018-10-04 11:29:44</sys_updated_on>
         <template>assigned_toSAMEASu_azubiname.x_277530_excuseme_ausbilder^EQ</template>
         <when>before</when>
     </sys_script>

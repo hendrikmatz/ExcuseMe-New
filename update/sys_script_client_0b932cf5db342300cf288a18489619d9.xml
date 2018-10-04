@@ -13,7 +13,7 @@
         <script><![CDATA[function onLoad() {
 	if (g_user.hasRole("x_277530_excuseme.Advanced")) {
 		// If the user does have the Ausbilder role, set the status field readonly property to false so requests can be approved on creation
-		
+		g_form.setReadOnly("state", false);
 		
 		//alert("admin stuff happening");
 	} else {
@@ -30,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0b932cf5db342300cf288a18489619d9</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Readonly Components</sys_name>
         <sys_overrides/>
         <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
         <sys_update_name>sys_script_client_0b932cf5db342300cf288a18489619d9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-10-04 08:46:21</sys_updated_on>
+        <sys_updated_on>2018-10-04 13:37:00</sys_updated_on>
         <table>x_277530_excuseme_excuseme</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>
