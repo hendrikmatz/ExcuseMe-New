@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="ref_ac_columns_search=true,global_search_config_handler=UserConfig,all_tables.text_index_translations=true,ref_ac_order_by=name,ref_ac_columns=email,display_image=photo,ref_auto_completer=AJAXTableCompleter,iterativeDelete=true,metadata_link_exempt=true" create_roles="user_admin" defaultsort="-1" dynamic_creation_script="dynamicUserCreation(current, value);" label="User" max_length="40" name="sys_user" text_index="true" type="collection">
-        <element choice="1" label="Ausbilder" max_length="75" name="x_277530_excuseme_ausbilder" reference="sys_user" type="reference">
+        <element choice="1" label="Ausbilder" max_length="75" name="x_277530_excuseme_ausbilder" reference="sys_user" reference_qual="roles=x_277530_excuseme.Advanced^EQ" reference_qual_condition="roles=x_277530_excuseme.Advanced^EQ" type="reference">
             <choice/>
         </element>
         <index name="index">
