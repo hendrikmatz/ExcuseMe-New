@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="ExcuseMe" max_length="40" name="x_277530_excuseme_excuseme" type="collection">
-        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Azubiname" mandatory="true" max_length="32" name="u_azubiname" reference="sys_user" reference_qual="roles=x_277530_excuseme.User^EQ" reference_qual_condition="roles=x_277530_excuseme.User^EQ" type="reference" use_dynamic_default="true"/>
+    <element audit="true" extends="task" label="ExcuseMe" max_length="40" name="x_277530_excuseme_excuseme" sizeclass="9" type="collection">
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Azubiname" mandatory="true" max_length="32" name="u_azubiname" reference="sys_user" reference_qual="roles=x_277530_excuseme.User^roles!=x_277530_excuseme.Advanced^EQ" reference_qual_condition="roles=x_277530_excuseme.User^roles!=x_277530_excuseme.Advanced^EQ" type="reference" use_dynamic_default="true"/>
+        <element display="true" label="E-Mail an Schule gesendet" max_length="40" name="u_email_sent_to_school" type="boolean"/>
         <element label="Enddatum" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Sonstiges" max_length="40" name="u_misc" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Grund" mandatory="true" max_length="40" name="u_reason" type="string">

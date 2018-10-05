@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_277530_excuseme_excuseme</collection>
+        <email_layout display_value="agineo">f45d5958dbc12300cf288a1848961905</email_layout>
+        <message/>
+        <message_html><![CDATA[<p><span style="font-family: verdana, geneva; font-size: 10pt;">&lt;sender name&gt;</span></p>
+<p style="margin: 0cm 0cm 12pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-family: verdana, geneva;"><strong><span style="font-size: 8pt;">&lt;sender name&gt;</span></strong><span style="font-size: 8pt;"><br />&lt;sender title&gt;</span></span></p>
+<p style="margin: 0cm 0cm 12pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 8pt; font-family: verdana, geneva;"><img title="" src="agineo%20logo.jpgx" alt="" align="baseline" border="" hspace="" vspace="" /></span></p>
+<p style="margin: 0cm 0cm 12pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 8pt; font-family: verdana, geneva;">&lt;sender mail&gt;</span></p>
+<p style="margin: 0cm 0cm 12pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 8pt; font-family: verdana, geneva;">&lt;sender phone&gt;</span></p>
+<p style="margin: 0cm 0cm 12pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 8pt; font-family: verdana, geneva;">agineo GmbH <br /> Pascalstra&szlig;e 25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /> D-52076 Aachen<br /> +49 2408 14901</span></p>
+<p style="margin: 0cm 0cm 12pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 8pt; font-family: verdana, geneva;">Gesch&auml;ftsf&uuml;hrer: Ludger Koslowski, Stefan Rolf, Martin Woyke <br /> Amtsgericht Aachen - HRB 4816</span></p>
+<p style="margin: 0cm 0cm 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-size: 8pt; font-family: verdana, geneva;">Wir sind an elf Standorten in Deutschland und der Schweiz in Ihrer N&auml;he.</span></p>
+<p style="margin: 0cm 0cm 0.0001pt; font-size: 11pt; font-family: Calibri, sans-serif;"><span style="font-family: verdana, geneva;"><a style="color: #0563c1;" href="www.agineo.de"><strong><span style="font-size: 8pt;">www.agineo.de</span></strong></a></span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>agineoSignature</name>
+        <sms_alternate/>
+        <subject/>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-05 12:17:39</sys_created_on>
+        <sys_id>0d129990dbc12300cf288a18489619be</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>agineoSignature</sys_name>
+        <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
+        <sys_update_name>sysevent_email_template_0d129990dbc12300cf288a18489619be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-05 13:18:33</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

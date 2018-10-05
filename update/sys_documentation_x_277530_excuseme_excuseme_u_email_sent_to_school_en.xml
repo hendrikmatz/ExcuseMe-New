@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_email_sent_to_school" label="E-Mail an Schule gesendet" language="en" table="x_277530_excuseme_excuseme">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_email_sent_to_school</element>
+            <help/>
+            <hint/>
+            <label>E-Mail an Schule gesendet</label>
+            <language>en</language>
+            <name>x_277530_excuseme_excuseme</name>
+            <plural>E-Mail an Schule gesendets</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-10-05 08:54:41</sys_created_on>
+            <sys_id>e7f3e854db412300cf288a1848961980</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>E-Mail an Schule gesendet</sys_name>
+            <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
+            <sys_update_name>sys_documentation_x_277530_excuseme_excuseme_u_email_sent_to_school_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-10-05 08:54:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

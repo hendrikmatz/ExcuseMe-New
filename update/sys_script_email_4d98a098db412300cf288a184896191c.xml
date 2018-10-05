@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>ExcuseMePrepareSchoolMail</name>
+        <new_lines_to_html>true</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+    // This script looks for ExcuseMe records that are due for sending an E-Mail and groups them if possible
+	
+	// Set font and font-size
+	//template.print("<font size=\"10\" face=\"verdana\">");
+	
+	// Get the ExcuseMe records and filter them for potential candidates
+	var gr = new GlideRecord("x_277530_excuseme_excuseme");
+	gr.addQuery("u_email_sent_to_school", "=", false);
+	gr.addQuery("state", "=", 1);
+	gr.query();
+	
+	// Create a list that contains the results to iterate over. This step is not really necessary but was done for practice purposes
+	var resultList = [];
+	while(gr.next()){
+		resultList.push({name: gr.getDisplayValue("u_azubiname"),
+						 _class: 290,
+						 reason: gr.getValue("u_reason"),
+						 start: gr.getDisplayValue("u_starting_date"),
+						 end: gr.getDisplayValue("u_end_date")
+						});
+		// Set the 'mail sent' parameter to true so the same excuse is not sent twice
+		//gr.u_email_sent_to_school = true;
+		//gr.update();
+	}
+	
+	// Print the result set in tabular form to the email
+	resultList.forEach(function(element) {
+					   template.print("Name: " + element.name +
+									  " Klasse: " + element._class + 
+									  " Zeitraum: " + element.start + " bis " + element.end + 
+									  " Grund: " + element.reason +
+									  "\n");
+					   });
+	// Close the font tag in case the email uses a different one
+	//template.print("</font>");
+	
+	
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-10-05 11:35:13</sys_created_on>
+        <sys_id>4d98a098db412300cf288a184896191c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ExcuseMePrepareSchoolMail</sys_name>
+        <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
+        <sys_update_name>sys_script_email_4d98a098db412300cf288a184896191c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-05 12:15:52</sys_updated_on>
+    </sys_script_email>
+</record_update>
