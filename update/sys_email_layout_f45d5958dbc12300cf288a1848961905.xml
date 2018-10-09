@@ -13,33 +13,19 @@
 </table>
 	]]></advanced_layout>
         <description>Contains agineo branding for the email.</description>
-        <layout><![CDATA[<p><link href="2482e91cdbc12300cf288a184896192d.cssdbx" rel="stylesheet" type="text/css" /></p>
-<table>
-<tbody>
-<tr>
-<td>Sehr geehrte Damen und Herren,</td>
-<td style="text-align: right;"><img src="agineo%20logo.jpgx" vspace="" hspace="" border="" align="baseline" alt="" title="" style="align: baseline;" /></td>
-</tr>
-<tr>
-<td colspan="2">${notification:body}</td>
-</tr>
-<tr>
-<td colspan="2">Beste Gr&uuml;&szlig;e aus Oberforstbach,</td>
-</tr>
-</tbody>
-</table>]]></layout>
+        <layout><![CDATA[<p>${notification:body}</p>]]></layout>
         <name>agineo</name>
         <sys_class_name>sys_email_layout</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-10-05 13:07:17</sys_created_on>
         <sys_id>f45d5958dbc12300cf288a1848961905</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>agineo</sys_name>
         <sys_package display_value="ExcuseMe" source="x_277530_excuseme">885f2ba5dbb02300cf288a18489619c7</sys_package>
         <sys_policy/>
         <sys_scope display_value="ExcuseMe">885f2ba5dbb02300cf288a18489619c7</sys_scope>
         <sys_update_name>sys_email_layout_f45d5958dbc12300cf288a1848961905</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-10-05 13:31:03</sys_updated_on>
+        <sys_updated_on>2018-10-09 10:57:52</sys_updated_on>
     </sys_email_layout>
 </record_update>
